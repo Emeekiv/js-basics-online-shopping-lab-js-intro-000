@@ -28,7 +28,7 @@ if (cart[0] === undefined){
 }
 else{
   for (var i=0; i < cart.length  ; i++){
-  var list = `${cart[i[itemName]]} at '$'${cart[i[itemPrice]]}`
+  var list.push() = `${cart[i[itemName]]} at '$'${cart[i[itemPrice]]}`
   }
   return `In your cart, you have ${list}.`
   }
