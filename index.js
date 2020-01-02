@@ -24,7 +24,7 @@ var oitem = {itemName : item, itemPrice: price}
 
 function viewCart() {
   var list = []
-if (cart[0] === undefined){
+if (cart[0[itemName]] === undefined){
   return 'Your shopping cart is empty.'
 }
 else{
