@@ -9,16 +9,37 @@ function setCart(c) {
   return cart;
 }
 
+function randomPrice(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function addToCart(item) {
- // write your code here
+var price = randomPrice(1, 100)
+var oitem = {itemName : item, itemPrice: price}
+ cart.push(oitem)
+ return `${item} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+if (cart[0] === undefined){
+  return 'Your shopping cart is empty.'
+}
+else{
+  for (var i=0; i < cart.length  ; i++){
+  var list = `${cart[i[itemName]]} at '$'${cart[i[itemPrice]]}`
+  }
+  return `In your cart, you have ${list}.`
+  }
 }
 
 function total() {
-  // write your code here
+  var totalCost
+  for (i = 0; i < cart.length; i++){
+    totalCost += cart[i[itemPrice]]
+  }
+  return totalCost
 }
 
 function removeFromCart(item) {
