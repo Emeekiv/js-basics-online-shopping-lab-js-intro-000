@@ -23,7 +23,7 @@ var oitem = {itemName : item, itemPrice: price}
 }
 
 function viewCart() {
-  var list[]
+  var list = []
 if (cart[0] === undefined){
   return 'Your shopping cart is empty.'
 }
