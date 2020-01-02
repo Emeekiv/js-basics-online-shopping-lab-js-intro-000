@@ -24,12 +24,12 @@ var oitem = {itemName : item, itemPrice: price}
 
 function viewCart() {
   var list = []
-if (cart[0[itemName]] === undefined){
+if (cart[0.itemName] === undefined){
   return 'Your shopping cart is empty.'
 }
 else{
   for (var i=0; i < cart.length  ; i++){
-  list.push(`${cart[i[itemName]]} at '$'${cart[i[itemPrice]]}`)
+  list.push(`${cart[i.itemName]} at '$'${cart[i.itemPrice]}`)
   }
   return `In your cart, you have ${list}.`
   }
